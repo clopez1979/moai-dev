@@ -50,6 +50,7 @@ cmake ^
 -DMOAI_VORBIS=TRUE ^
 -DMOAI_UNTZ=TRUE ^
 -DMOAI_LUAJIT=TRUE ^
+-DMOAI_SPINE=TRUE ^
 ..\..\
 
 :end

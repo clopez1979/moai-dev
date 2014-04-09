@@ -146,6 +146,7 @@ option ( MOAI_VORBIS         FALSE )
 option ( MOAI_UNTZ           FALSE )
 option ( MOAI_SDL            FALSE )
 option ( MOAI_LUAJIT         FALSE )
+option ( MOAI_SPINE          FALSE )
 
 if (PLUGIN_DIR)
   set (MOAI_PLUGINS TRUE)
@@ -208,6 +209,7 @@ SETUP_MODULE(MOAI_OGG MOAI_WITH_OGG)
 SETUP_MODULE(MOAI_SDL MOAI_WITH_SDL)
 SETUP_MODULE(MOAI_MONGOOSE MOAI_WITH_MONGOOSE)
 SETUP_MODULE(MOAI_LUAJIT MOAI_WITH_LUAJIT)
+SETUP_MODULE(MOAI_SPINE MOAI_WITH_SPINE)
 SETUP_MODULE(MOAI_PLUGINS AKU_WITH_PLUGINS)
 
 SETUP_MODULE(MOAI_TEST AKU_WITH_TEST)
@@ -256,7 +258,7 @@ add_subdirectory ( moai-sim )
 
 add_subdirectory ( moai-box2d )
 add_subdirectory ( moai-chipmunk )
-
+add_subdirectory ( moai-spine )
 
 add_subdirectory ( moai-untz )
 add_subdirectory ( moai-http-client )
